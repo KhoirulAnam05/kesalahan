@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.skyfishjy.library.RippleBackground
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rippleBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+android:background="@color/design_default_color_primary"
+  app:rb_color="@android:color/white"
+    app:rb_radius="32dp"
+    app:rb_rippleAmount="6"
+    app:rb_duration="3000"
+    app:rb_scale="6"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/fabABSENABSEN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:text="Absen"
+        android:textColor="@android:color/white"
+        android:textSize="32sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvScaning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewABSEN"
+        android:layout_centerHorizontal="true"
+        android:text="Scaning..."
+        android:textColor="@android:color/white"
+        android:textSize="13sp"
+        android:visibility="gone"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabABSEN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:backgroundTint="@android:color/white"
+        android:src="@drawable/ic_baseline_person_24" />
+
+    <TextView
+        android:id="@+id/tvABSENKARYAWANsycces"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Absen Karyawan"
+        android:background="@drawable/bg_absen_sukses"
+        android:textColor="@color/design_default_color_primary"
+        android:textSize="18sp"
+        android:paddingTop="14dp"
+        android:paddingBottom="14dp"
+        android:paddingStart="68dp"
+        android:paddingEnd="68dp"
+        android:visibility="gone"
+        android:layout_marginBottom="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+
+
+  </com.skyfishjy.library.RippleBackground>
+  
+  
+  
+  
+  
+  package com.example.absenkaryawan2
+
+import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
+
+
+
+
+class MainActivity : AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+    }
+
+    private fun loadScanLocation() {
+ripplebackground
+   }
+
+}
